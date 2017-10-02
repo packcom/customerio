@@ -30,9 +30,9 @@ defmodule Customerio.Mixfile do
 
   defp deps do
     [
-      {:httpoison, "~> 0.11.0"},
+      {:httpoison, "~> 0.13.0"},
       {:ex_doc, "~> 0.0", only: :dev},
-      {:poison, "~> 3.0"},
+      {:poison, "~> 2.0 or ~> 3.0"},
       {:exvcr, "~> 0.8", only: :test},
       {:inch_ex,"~> 0.5", only: :docs}
     ]
