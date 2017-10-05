@@ -160,7 +160,7 @@ defmodule Customerio do
     id :: value,
     name :: value,
     data_map :: %{key: value},
-    opts :: [key: value]) :: {:ok, Customerio.Success.t} | {:error, Customerio.Error.t}
+    opts :: []) :: {:ok, Customerio.Success.t} | {:error, Customerio.Error.t}
   def track(id, name, data_map, opts \\ []) do
     send_request(
       :post,
