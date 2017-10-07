@@ -28,13 +28,6 @@ defmodule Customerio.Util do
   This method sends requests to `customer.io` API endpoint, with
   defined method, route, body and HTTPoison options.
   """
-
-  @type method :: :get | :post | :delete | :put | :patch
-  @spec send_request(
-    method :: method,
-    route :: String.t,
-    data_map :: %{},
-    opts :: []) :: any
   def send_request(method, route, data_map, opts \\ []) do
     case HTTPoison.request(
       method,
